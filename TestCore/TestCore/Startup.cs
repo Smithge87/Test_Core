@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TestCore.Data;
 
 namespace TestCore
 {
@@ -25,6 +27,7 @@ namespace TestCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<DataContext>(x => x.UseSqlite("ConectionString"));
             services.AddControllers();
         }
 
@@ -36,7 +39,8 @@ namespace TestCore
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // removing so i don't have to listen on https
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

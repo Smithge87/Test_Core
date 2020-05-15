@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj": {}
+    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testcore\\TestCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj": {
+    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testcore\\TestCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj",
+        "projectUniqueName": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testcore\\TestCore.csproj",
         "projectName": "TestCore",
-        "projectPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj",
+        "projectPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testcore\\TestCore.csproj",
         "packagesPath": "C:\\Users\\gsmith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\obj\\",
+        "outputPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gsmith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
         "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.4, )"
             },

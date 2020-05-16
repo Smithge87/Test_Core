@@ -33,6 +33,7 @@ namespace TestCore
             //-- required for sending CORS headers
             //-- for some reason I didn't need this to not fail from my app accessing
             services.AddCors();
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

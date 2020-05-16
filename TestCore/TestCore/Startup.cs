@@ -29,6 +29,10 @@ namespace TestCore
         {
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+
+            //-- required for sending CORS headers
+            //-- for some reason I didn't need this to not fail from my app accessing
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +49,9 @@ namespace TestCore
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //-- creates the header that allows requests in. this is where I can specify access.
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseEndpoints(endpoints =>
             {

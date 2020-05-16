@@ -1,0 +1,3 @@
+dotnet ef migrations add nameOfMigration
+dotnet ef migrations remove
+dotnet ef database update

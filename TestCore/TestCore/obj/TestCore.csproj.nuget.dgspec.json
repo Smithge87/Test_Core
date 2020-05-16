@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj": {}
+    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testCore\\TestCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj": {
+    "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testCore\\TestCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj",
+        "projectUniqueName": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testCore\\TestCore.csproj",
         "projectName": "TestCore",
-        "projectPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj",
+        "projectPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testCore\\TestCore.csproj",
         "packagesPath": "C:\\Users\\gsmith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\obj\\",
+        "outputPath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\testCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gsmith\\AppData\\Roaming\\NuGet\\NuGet.Config",

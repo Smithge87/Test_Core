@@ -58,3 +58,4 @@ C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.dll
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.pdb
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.genruntimeconfig.cache
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\testCore\obj\Debug\netcoreapp3.1\TestCore.csprojAssemblyReference.cache

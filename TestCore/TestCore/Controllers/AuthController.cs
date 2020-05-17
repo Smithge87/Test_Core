@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TestCore.Data;
+using TestCore.Dtos;
 using TestCore.Models;
 
 namespace TestCore.Controllers
@@ -18,19 +19,22 @@ namespace TestCore.Controllers
             _repo = repo;
         }
         [HttpPost("register")]
-        public async Task<IActionResult> Register(string username, string password)
+        //-- register using the dto info, functionality stays uncoupled. 
+        //-- UserForRegister DTO is pretty awesome. reads the JSON object off the page when register is called POST for the API and infers the values for UserForRegister function 
+        //-- reads from the Body object btw
+        public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
             // validate request
-            username = username.ToLower();
-            if (await _repo.UserExists(username))
+            userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
+            if (await _repo.UserExists(userForRegisterDto.Username))
             {
                 return BadRequest("Username already axists");
             }
             var userToCreate = new User
             {
-                Username = username
+                Username = userForRegisterDto.Username
             };
-            var createdUser = await _repo.Register(userToCreate, password);
+            var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
 
             return StatusCode(201);
         }

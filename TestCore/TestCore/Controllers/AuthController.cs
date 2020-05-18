@@ -19,11 +19,17 @@ namespace TestCore.Controllers
             _repo = repo;
         }
         [HttpPost("register")]
-        //-- register using the dto info, functionality stays uncoupled. 
+        //-- registers UserForRegister using the dto info, functionality stays uncoupled. 
         //-- UserForRegister DTO is pretty awesome. reads the JSON object off the page when register is called POST for the API and infers the values for UserForRegister function 
-        //-- reads from the Body object btw
+        //-- reads from the Body object - adding [From Body] prevents nulls from validation
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
+            //-- don't need this because im working in an API controller (see top of file) and dto level validation
+            if (!ModelState.IsValid)
+            {
+                //-- prevents 500 error, 
+                return BadRequest(ModelState);
+            }
             // validate request
             userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
             if (await _repo.UserExists(userForRegisterDto.Username))

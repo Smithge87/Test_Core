@@ -49,10 +49,10 @@ namespace TestCore.Data
             return true;
         }
 
-        public async Task<User> Register(UserForRegisterDto userForRegisterDto)
+        public async Task<User> Register(User user, string password)
         {
             byte[] passwordHash, passwordSalt;
-            CreatePasswordHash(userForRegisterDto.Password, out passwordHash, out passwordSalt);
+            CreatePasswordHash(password, out passwordHash, out passwordSalt);
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
 

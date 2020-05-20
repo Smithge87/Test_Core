@@ -6,6 +6,7 @@ using System.Runtime.ExceptionServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
+using TestCore.Dtos;
 using TestCore.Models;
 
 namespace TestCore.Data
@@ -48,10 +49,10 @@ namespace TestCore.Data
             return true;
         }
 
-        public async Task<User> Register(User user, string password)
+        public async Task<User> Register(UserForRegisterDto userForRegisterDto)
         {
             byte[] passwordHash, passwordSalt;
-            CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            CreatePasswordHash(userForRegisterDto.Password, out passwordHash, out passwordSalt);
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
 

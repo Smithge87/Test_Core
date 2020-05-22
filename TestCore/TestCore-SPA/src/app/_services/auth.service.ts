@@ -21,7 +21,8 @@ constructor(private http: HttpClient) {
     })
     );
   }
-  register(model:any){
-    return this.http.post(this.baseUrl+ 'register', model);
+  register(model: any){
+    console.log(model);
+    return this.http.post(this.baseUrl + 'register', model);
   }
 }

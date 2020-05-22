@@ -10,6 +10,9 @@
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
+    "typeRoots":[
+      "src/typings.d.ts"
+    ],
     "target": "es2015",
     "lib": [
       "es2018",

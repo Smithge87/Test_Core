@@ -8,6 +8,7 @@ namespace TestCore.Helpers
 {
     public static class Extensions
     {
+        //-- overloads context.response to add a header, making the exception ingestible by the Client
         public static void AddApplicationError(this HttpResponse response, string message)
         {
             response.Headers.Add("Application-Error", message);

@@ -1,3 +1,9 @@
 dotnet ef migrations add nameOfMigration
 dotnet ef migrations remove
 dotnet ef database update
+
+ng serve
+npm install
+
+from _guard directory...
+ng g (for generate) guard auth --skipTests

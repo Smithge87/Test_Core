@@ -1,18 +1,21 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Core Test</a>
+    <a class="navbar-brand" [routerLink]="['/home']" >Core Test</a>
       <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item active" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/home']" >Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Opportunities</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/members']" >Opportunities</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">My Opportunities</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link " [routerLink]="['/lists']" routerLinkActive="router-link-active" >Fellow Volunteers</a>
         </li>      
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link " [routerLink]="['/messages']"  >My Messages</a>
+        </li>   
         <li class="nav-item">
-          <a class="nav-link " (click)="logOut()">Log Out</a>
+          <a class="nav-link " (click)="logOut()" [routerLink]="['/home']" routerLinkActive="router-link-active" >Log Out</a>
         </li>
       </ul>
 

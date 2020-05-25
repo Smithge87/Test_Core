@@ -15,7 +15,11 @@ export class AlertifyService {
       }
     });
   }
+
+
+
   success(message: string) {
+
     alertify.success(message);
   }
   error(message: string) {

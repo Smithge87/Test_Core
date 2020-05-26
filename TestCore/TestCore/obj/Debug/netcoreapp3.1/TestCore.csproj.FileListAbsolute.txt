@@ -138,3 +138,10 @@ C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.pdb
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.genruntimeconfig.cache
 C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\TestCore.pdb
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.csproj.CoreCompileInputs.cache
+C:\Users\gsmith\Desktop\Code\TestCore\TestCore\TestCore\obj\Debug\netcoreapp3.1\TestCore.MvcApplicationPartsAssemblyInfo.cache

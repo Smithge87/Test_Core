@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "biPcECLehYh7BhD9GwfuVv/+MqzK+oXkdC1fvmRqUTf3l+fhNu7X9zdu/MLPFFdxrCPeKOasz5cGnT53Z9Q/IA==",
+  "dgSpecHash": "xs1jtBWcKHhrtpFGPjv1W0zkIDZMZVtXL0q2ehPNQF9m85/jajeHd/O8+jq5C8pTXXRQUZwm+zGYGFlFukny/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\gsmith\\Desktop\\Code\\TestCore\\TestCore\\TestCore\\TestCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gsmith\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\gsmith\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\gsmith\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.4\\microsoft.aspnetcore.authentication.jwtbearer.3.1.4.nupkg.sha512",
     "C:\\Users\\gsmith\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\gsmith\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.4\\microsoft.aspnetcore.jsonpatch.3.1.4.nupkg.sha512",
